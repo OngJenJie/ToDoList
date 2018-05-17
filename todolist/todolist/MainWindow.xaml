@@ -15,10 +15,12 @@
 
         <TextBlock VerticalAlignment="Center" Margin="10 0">2018/5/17</TextBlock>
 
-        <StackPanel Grid.Row="1">
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel >
             <StackPanel x:Name="ToDoList"></StackPanel>
             <Button x:Name="AddBtn" Click="AddBtn_Click">Add</Button>
         </StackPanel>
+        </ScrollViewer>
 
         <StackPanel Grid.Row="2" Orientation="Horizontal">
             <!--自訂按鈕-->
